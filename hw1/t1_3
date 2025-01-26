@@ -1,0 +1,73 @@
+Task 1_3
+
+a)
+k += 1         | 4
+i = n          | 2
+while i > 0:   | 3 * (n + 1)
+    i -= 1     | 4 * n
+
+sum = 7n + 9
+
+b)
+i = n          | 2
+while i > 1:   | 3 * (m + 1)
+    k += 1     | 4 * m
+    i //= 2    | 4 * m
+
+n = 2^m -> m = log(n)
+sum = 11m + 5 = 11log(n) + 5
+
+c)
+i = 0              | 2
+while i < n:       | 3 * (n + 1)
+    j = 0          | 2 * n
+    while j < n:   | 3 * n * (n + 1)
+        k += 1     | 4 * n * n
+        j += 2     | 4 * n * n
+    i += 2         | 4 * n
+
+sum = 11n^2 + 12n + 3
+
+d)
+i = 0                  | 2
+while i < n:           | 3 * (n + 1)
+    j = 0              | 2 * n
+    while j < i * i:   | 5 * n * (m + 1)
+        k += 1         | 4 * n * m
+        j += 1         | 4 * n * m
+    i += 1             | 4 * n
+
+m = n^2 / 2
+
+
+sum = 2 + 3n + 3 + 2n + 5n^3 / 2 +  5n + 4n^3 / 2 + 4n^3 /2 + 4n =
+= 13n^3 / 2 + 14n + 6
+
+e)
+i = 1                  | 2
+while i < n:           | 3 * (m + 1)
+    j = 1              | 2 * m
+    while j < n:       | 3 * m * (m + 1)
+        k += 1         | 4 * m * m
+        j *= 2         | 4 * m * m
+    i *= 2             | 4 * m
+
+m = log(n)
+
+sum = 2 + 3m + 3 + 2m + 3m^2 +
++ 3m + 4m^2 + 4m^2 + 4m =
+= 11m^2 + 12m + 5
+
+f)
+i = 1                  | 2
+while i < n:           | 3 * (m + 1)
+    j = i              | 2 * m
+    while j < n:       | 3 * m * (m + 1)
+        k += 1         | 4 * m * m
+        j *= 2         | 4 * m * m
+    i *= 2             | 4 * m
+
+The fact that instead of j = 1 we have here
+j = i doesn't change the amount of time
+that program needs
+sum = 11log(n) + 12log(n) + 5
